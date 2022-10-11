@@ -14,10 +14,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Tycoon HQ - The {`world's`} best at your fingers</title>
+        <title>Tycoon HQ - The world’s best at your fingers</title>
         <meta
           name="description"
-          content="A curated social platform delivering the world's best ideas."
+          content="A curated social platform delivering the world’s best ideas."
         />
       </Head>
       <Header />

@@ -549,13 +549,11 @@ export function PrimaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-            Every feature you need to win. Try it for yourself.
+            A social platform that doesn’t waste your time.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-            Pocket was built for investors like you who play by their own rules
-            and aren’t going to let SEC regulations get in the way of their
-            dreams. If other investing tools are afraid to build it, Pocket has
-            it.
+            Tycoon was built to take the guessing out of who the experts are. We built the most effective way
+            to find the world’s most successful people, and the most efficient way for them to reach you.
           </p>
         </div>
       </Container>

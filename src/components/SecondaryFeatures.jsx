@@ -196,7 +196,7 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            Now is the time to build your portfolio.
+          We’re on a mission to help bridge the gap between the world’s most successful people, and you.
           </h2>
           <p className="mt-2 text-lg text-gray-600">
             With typical market returns, you have to start young to secure your
