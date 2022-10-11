@@ -3,6 +3,7 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useDebouncedCallback } from 'use-debounce'
+import Image from 'next/future/image'
 
 import { AppScreen } from '@/components/AppScreen'
 import { CircleBackground } from '@/components/CircleBackground'
@@ -28,7 +29,7 @@ const features = [
     description:
       'All of the most successful people at your fingertips, across industries. Don’t see who you’re looking for? Invite them.',
     icon: DeviceUserIcon,
-    screen: InviteScreen,
+    screen: ExploreScreen,
   },
   {
     name: 'Notifications on stock dips',
@@ -167,19 +168,19 @@ const bodyAnimation = {
   },
 }
 
-function InviteScreen({ custom, animated = false }) {
+function ExploreScreen({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-        <AppScreen.Title>Invite people</AppScreen.Title>
+        <AppScreen.Title>Explore Tycoons</AppScreen.Title>
         <AppScreen.Subtitle>
-          Get tips <span className="text-white">5s sooner</span> for every
-          invite.
+          Profiles<span className="text-white"> & social links</span> that span the web
         </AppScreen.Subtitle>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
-        <div className="px-4 py-6">
-          <div className="space-y-6">
+        <div>
+          <Image src={require('../images/ExplorePage.png')} alt='explore page' width={320} height={100}/>
+          {/* <div className="space-y-6">
             {[
               { label: 'Full name', value: 'Albert H. Wiggin' },
               { label: 'Email address', value: 'awiggin@chase.com' },
@@ -194,7 +195,7 @@ function InviteScreen({ custom, animated = false }) {
           </div>
           <div className="mt-6 rounded-lg bg-cyan-500 py-2 px-3 text-center text-sm font-semibold text-white">
             Invite person
-          </div>
+          </div> */}
         </div>
       </MotionAppScreenBody>
     </AppScreen>
@@ -417,7 +418,7 @@ function FeaturesDesktop() {
       </Tab.List>
       <div className="relative col-span-6">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-          <CircleBackground color="#13B5C8" className="animate-spin-slower" />
+          <CircleBackground color="#FFD700" className="animate-spin-slower" />
         </div>
         <PhoneFrame className="z-10 mx-auto w-full max-w-[366px]">
           <Tab.Panels as={Fragment}>
@@ -494,7 +495,7 @@ function FeaturesMobile() {
             <div className="relative transform overflow-hidden rounded-2xl bg-gray-800 px-5 py-6">
               <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <CircleBackground
-                  color="#13B5C8"
+                  color="#FFD700"
                   className={featureIndex % 2 === 1 ? 'rotate-180' : undefined}
                 />
               </div>
@@ -552,7 +553,7 @@ export function PrimaryFeatures() {
             A social platform that doesn’t waste your time.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-            Tycoon was built to take the guessing out of who the experts are. We built the most effective way
+            Tycoon takes the guessing out of who the experts are. We built the most effective way
             to find the world’s most successful people, and the most efficient way for them to reach you.
           </p>
         </div>
