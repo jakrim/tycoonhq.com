@@ -24,9 +24,9 @@ const MotionAppScreenBody = motion(AppScreen.Body)
 
 const features = [
   {
-    name: 'Invite friends for better returns',
+    name: 'A new way to find mentors',
     description:
-      'For every friend you invite to Pocket, you get insider notifications 5 seconds sooner. And it’s 10 seconds if you invite an insider.',
+      'All of the most successful people at your fingertips, across industries. Don’t see who you’re looking for? Invite them.',
     icon: DeviceUserIcon,
     screen: InviteScreen,
   },
