@@ -25,25 +25,25 @@ const MotionAppScreenBody = motion(AppScreen.Body)
 
 const features = [
   {
-    name: 'A new way to find mentors',
+    name: 'A new way to discover',
     description:
       'All of the most successful people at your fingertips, across industries. Don’t see who you’re looking for? Invite them.',
-    icon: DeviceUserIcon,
+    icon: ExploreIcon,
     screen: ExploreScreen,
   },
   {
-    name: 'Notifications on stock dips',
+    name: 'A social platform not ruined by marketers',
     description:
-      'Get a push notification every time we find out something that’s going to lower the share price on your holdings so you can sell before the information hits the public markets.',
-    icon: DeviceNotificationIcon,
-    screen: StocksScreen,
+      'No businesses, no brands, no ads. A platform for people, by people.',
+    icon: DeviceTouchIcon,
+    screen: HomeScreen,
   },
   {
-    name: 'Invest what you want',
+    name: 'Find content faster',
     description:
-      'We hide your stock purchases behind thousands of anonymous trading accounts, so suspicious activity can never be traced back to you.',
-    icon: DeviceTouchIcon,
-    screen: InvestScreen,
+      "More efficient content categorization allows you to find content you'll enjoy.",
+    icon: FilterIcon,
+    screen: ExploreModal,
   },
 ]
 
@@ -67,20 +67,24 @@ function DeviceUserIcon(props) {
   )
 }
 
-function DeviceNotificationIcon(props) {
+function ExploreIcon(props) {
   return (
-    <svg viewBox="0 0 32 32" aria-hidden="true" {...props}>
-      <circle cx={16} cy={16} r={16} fill="#A3A3A3" fillOpacity={0.2} />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
-        fill="#A3A3A3"
-      />
-      <path
-        d="M9 8a2 2 0 012-2h10a2 2 0 012 2v2a2 2 0 01-2 2H11a2 2 0 01-2-2V8z"
-        fill="#737373"
-      />
+    <svg height="32" width="32">
+      <svg fill="#a3a2a2" height="32" viewBox="0 0 640 512" width="32">
+        <path d="m638.8 216.8-85.7-206.1c-3.381-8.162-12.77-12.03-20.94-8.647l-117.3 48.61c-8.162 3.381-12.06 12.73-8.68 20.89.002.002 0-.002 0 0l85.73 206.9c3.383 8.164 12.73 12.07 20.9 8.689l117.3-48.61c8.19-4.132 12.09-13.532 8.69-21.732zm-216.2 262.3-46.42-131.5c9.734-12.28 15.79-27.6 15.79-44.49 0-39.77-32.24-72-72.01-72-39.76 0-71.99 32.24-71.99 72.01 0 16.89 6.06 32.18 15.79 44.46l-46.36 131.52c-4.406 12.5 2.126 26.22 14.63 30.63 2.57 1.87 5.27 2.27 7.07 2.27 9.875 0 19.16-6.157 22.63-16l42.9-121.6c4.686.959 9.507 1.551 14.48 1.551s9.822-.5039 14.51-1.463l42.87 121.5c4.31 9.812 13.61 16.012 22.61 16.012 2.656 0 5.344-.4375 8.001-1.375 13.399-4.425 19.899-18.125 15.499-31.525zm-127.5-176c0-13.23 10.77-24 24-24s24 10.77 24 24-10.77 24-24 24c-12.3 0-24-9.9-24-24z"/>
+        <path d="m488.6 269.9-96.7 33.73c-.1914-39.75-32.58-71.82-72.33-71.63-40.47.2-72.47 32.4-72.47 72 .0801 15.91 5.387 31.29 15.27 43.76l-127 43.69c-8.754 3.008-18.05-.7051-21.27-8.479l-7.9-21.071-64.02 26.5c-8.162 3.381-17.52-.4935-20.9-8.658l-20.06-48.42c-3.377-8.166.4967-17.52 8.659-20.91l64.08-26.55-8.749-21.062c-3.22-8.7.72-17 9.04-21.1l335.1-163.2z" opacity=".4"/>
+      </svg>
+    </svg>
+  )
+}
+
+function FilterIcon(props) {
+  return (
+    <svg height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+      <svg fill="#a2a3a3" height="32" viewBox="0 0 512 512" width="32">
+      <path d="m512 160c0 53-43 96-96 96-53.9 0-96-43-96-96 0-53.9 42.1-96 96-96 53 0 96 42.1 96 96zm-96-32c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32zm-320 128c53 0 96 42.1 96 96 0 53-43 96-96 96-53.02 0-96-43-96-96 0-53.9 42.98-96 96-96zm-32 96c0 17.7 14.33 32 32 32 17.7 0 32-14.3 32-32s-14.3-32-32-32c-17.67 0-32 14.3-32 32z"/>
+    <path d="m325.5 192h-293.5c-17.67 0-32-14.3-32-32s14.33-32 32-32h293.5c-3.6 10-5.5 20.8-5.5 32s1.9 21.1 5.5 32zm-133.5 160c0-11.2-1.9-22-5.5-32h293.5c17.7 0 32 14.3 32 32s-14.3 32-32 32h-293.5c3.6-10.9 5.5-20.8 5.5-32z" opacity=".4"/>
+    </svg>
     </svg>
   )
 }
@@ -186,153 +190,40 @@ function ExploreScreen({ custom, animated = false }) {
   )
 }
 
-function StocksScreen({ custom, animated = false }) {
+function ExploreModal({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-        <AppScreen.Title>Stocks</AppScreen.Title>
-        <AppScreen.Subtitle>March 9, 2022</AppScreen.Subtitle>
+        <AppScreen.Title>Content Filtering</AppScreen.Title>
+        <AppScreen.Subtitle>Making search less black and white</AppScreen.Subtitle>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
-        <div className="divide-y divide-gray-100">
-          {[
-            {
-              name: 'Laravel',
-              price: '4,098.01',
-              change: '+4.98%',
-              color: '#F9322C',
-              logo: LaravelLogo,
-            },
-            {
-              name: 'Tuple',
-              price: '5,451.10',
-              change: '-3.38%',
-              color: '#5A67D8',
-              logo: TupleLogo,
-            },
-            {
-              name: 'Transistor',
-              price: '4,098.41',
-              change: '+6.25%',
-              color: '#2A5B94',
-              logo: TransistorLogo,
-            },
-            {
-              name: 'Diageo',
-              price: '250.65',
-              change: '+1.25%',
-              color: '#3320A7',
-              logo: DiageoLogo,
-            },
-            {
-              name: 'StaticKit',
-              price: '250.65',
-              change: '-3.38%',
-              color: '#2A3034',
-              logo: StaticKitLogo,
-            },
-            {
-              name: 'Statamic',
-              price: '5,040.85',
-              change: '-3.11%',
-              color: '#0EA5E9',
-              logo: StatamicLogo,
-            },
-            {
-              name: 'Mirage',
-              price: '140.44',
-              change: '+9.09%',
-              color: '#16A34A',
-              logo: MirageLogo,
-            },
-            {
-              name: 'Reversable',
-              price: '550.60',
-              change: '-1.25%',
-              color: '#8D8D8D',
-              logo: ReversableLogo,
-            },
-          ].map((stock) => (
-            <div key={stock.name} className="flex items-center gap-4 px-4 py-3">
-              <div
-                className="flex-none rounded-full"
-                style={{ backgroundColor: stock.color }}
-              >
-                <stock.logo className="h-10 w-10" />
-              </div>
-              <div className="flex-auto text-sm text-gray-900">
-                {stock.name}
-              </div>
-              <div className="flex-none text-right">
-                <div className="text-sm font-medium text-gray-900">
-                  {stock.price}
-                </div>
-                <div
-                  className={clsx(
-                    'text-xs leading-5',
-                    stock.change.startsWith('+')
-                      ? 'text-cyan-500'
-                      : 'text-gray-500'
-                  )}
-                >
-                  {stock.change}
-                </div>
-              </div>
-            </div>
-          ))}
+          <>
+        <div>
+        <Image src={'/ExplorePage.png'} alt='filter content modal' quality={100} width={340} height={140}/>
+
+        <div className='absolute left-0 bottom-0'>
+          <Image src={'/ExploreModal.png'} alt='filter content modal' quality={100} width={340} height={140}/>
+          </div>
         </div>
+        </>
       </MotionAppScreenBody>
     </AppScreen>
   )
 }
 
-function InvestScreen({ custom, animated = false }) {
+function HomeScreen({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-        <AppScreen.Title>Buy $LA</AppScreen.Title>
+        <AppScreen.Title>Content and Users</AppScreen.Title>
         <AppScreen.Subtitle>
-          <span className="text-white">$34.28</span> per share
+          How social media used to be
         </AppScreen.Subtitle>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
-        <div className="px-4 py-6">
-          <div className="space-y-4">
-            {[
-              { label: 'Number of shares', value: '100' },
-              {
-                label: 'Current market price',
-                value: (
-                  <div className="flex">
-                    $34.28
-                    <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6">
-                      <path
-                        d="M17 15V7H9M17 7 7 17"
-                        stroke="#06B6D4"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </div>
-                ),
-              },
-              { label: 'Estimated cost', value: '$3,428.00' },
-            ].map((item) => (
-              <div
-                key={item.label}
-                className="flex justify-between border-b border-gray-100 pb-4"
-              >
-                <div className="text-sm text-gray-500">{item.label}</div>
-                <div className="text-sm font-semibold text-gray-900">
-                  {item.value}
-                </div>
-              </div>
-            ))}
-            <div className="rounded-lg bg-cyan-500 py-2 px-3 text-center text-sm font-semibold text-white">
-              Buy shares
-            </div>
-          </div>
+        <div>
+          <Image src={'/HomeScreen.png'} alt='filter content modal' quality={100} width={340} height={140}/>
         </div>
       </MotionAppScreenBody>
     </AppScreen>
@@ -406,12 +297,27 @@ function FeaturesDesktop() {
         </div>
         <PhoneFrame className="z-10 mx-auto w-full max-w-[366px]">
           <Tab.Panels as={Fragment}>
-            <AnimatePresence
+            {/* <AnimatePresence
               initial={false}
               custom={{ isForwards, changeCount }}
-            >
-              {features.map((feature, featureIndex) =>
-                selectedIndex === featureIndex ? (
+            > */}
+              {features.map((feature, featureIndex) => {
+               return selectedIndex === featureIndex && featureIndex === 1 ? (
+                <>
+                  <Tab.Panel
+                    static
+                    key={feature.name + changeCount}
+                    className="col-start-1 row-start-1 flex focus:outline-offset-[32px] [&:not(:focus-visible)]:focus:outline-none"
+                  >
+                    {console.log("🚀 ~ file: PrimaryFeatures.jsx ~ line 348 ~ FeaturesDesktop ~ featureIndex", featureIndex)}
+                    <feature.screen
+                      animated={featureIndex === 1 ? false : true}
+                      custom={{ isForwards, changeCount }}
+                    />
+
+                  </Tab.Panel>
+                  </>
+                ) : selectedIndex === featureIndex ? (
                   <Tab.Panel
                     static
                     key={feature.name + changeCount}
@@ -423,8 +329,8 @@ function FeaturesDesktop() {
                     />
                   </Tab.Panel>
                 ) : null
-              )}
-            </AnimatePresence>
+              })}
+            {/* </AnimatePresence> */}
           </Tab.Panels>
         </PhoneFrame>
       </div>
@@ -486,9 +392,9 @@ function FeaturesMobile() {
               <PhoneFrame className="relative mx-auto w-full max-w-[366px]">
                 <feature.screen />
               </PhoneFrame>
-              <div className="absolute inset-x-0 bottom-0 bg-gray-800/95 p-6 backdrop-blur sm:p-10">
+              <div className="bg-gray-800/95 p-6 backdrop-blur sm:p-10">
                 <feature.icon className="h-8 w-8" />
-                <h3 className="mt-6 text-sm font-semibold text-white sm:text-lg">
+                <h3 className="mt-4 text-sm font-semibold text-white sm:text-lg">
                   {feature.name}
                 </h3>
                 <p className="mt-2 text-sm text-gray-400">

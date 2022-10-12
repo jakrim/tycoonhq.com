@@ -1,4 +1,4 @@
-# Pocket
+# Tycoon
 
 Tycoon HQ is a curated social platform, this repository is the code for the website tycoonhq.com
 

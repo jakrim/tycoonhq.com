@@ -199,15 +199,14 @@ export function SecondaryFeatures() {
           We’re on a mission to help bridge the gap between the world’s most successful people, and you.
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            With typical market returns, you have to start young to secure your
-            future. With Pocket, it’s never too late to build your nest egg.
+            {`It's like masterclass meets Twitter. The world's most successful people sharing their stories about their life, every day.`}
           </p>
         </div>
         <ul
           role="list"
           className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3"
         >
-          {features.map((feature) => (
+          {/* {features.map((feature) => (
             <li
               key={feature.name}
               className="rounded-2xl border border-gray-200 p-8"
@@ -218,7 +217,7 @@ export function SecondaryFeatures() {
               </h3>
               <p className="mt-2 text-gray-700">{feature.description}</p>
             </li>
-          ))}
+          ))} */}
         </ul>
       </Container>
     </section>
