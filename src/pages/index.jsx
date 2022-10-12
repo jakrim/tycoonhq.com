@@ -14,11 +14,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Tycoon HQ - The world’s best at your fingers</title>
+        <title>Tycoon - A curated social platform.</title>
         <meta
           name="description"
           content="A curated social platform delivering the world’s best ideas."
         />
+        <link rel="icon" href="/images/logos/TycoonTLogo.svg" type="image/svg+xml" sizes="any"/>
       </Head>
       <Header />
       <main>

@@ -174,12 +174,12 @@ function ExploreScreen({ custom, animated = false }) {
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
         <AppScreen.Title>Explore Tycoons</AppScreen.Title>
         <AppScreen.Subtitle>
-          Profiles<span className="text-white"> & social links</span> that span the web
+        Browse<span className="text-white"> the top 1%,</span> those you know and don’t know.
         </AppScreen.Subtitle>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
         <div>
-          <Image src={require('../images/ExplorePage.png')} alt='explore page' width={320} height={100}/>
+          <Image src={require('/public/images/screenshots/ExplorePage.png')} alt='explore page' width={320} height={100}/>
           {/* <div className="space-y-6">
             {[
               { label: 'Full name', value: 'Albert H. Wiggin' },
@@ -550,7 +550,7 @@ export function PrimaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-            A social platform that doesn’t waste your time.
+            A social platform that isn’t a waste of time.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
             Tycoon takes the guessing out of who the experts are. We built the most effective way
