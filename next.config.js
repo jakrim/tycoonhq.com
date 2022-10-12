@@ -6,6 +6,16 @@ const nextConfig = {
     newNextLinkBehavior: true,
     scrollRestoration: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'tycoonhq.com',
+        port: '',
+        pathname: '/',
+      },
+    ],
+  },
 }
 
 module.exports = nextConfig
