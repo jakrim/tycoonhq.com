@@ -99,7 +99,7 @@ function PlayIcon(props) {
   )
 }
 
-const gifAppPreview = require('/public/images/screenshots/TycoondesignGIF.gif')
+const gifAppPreview = require('/images/screenshots/TycoondesignGIF.gif')
 
 function AppDemo() {
   return (

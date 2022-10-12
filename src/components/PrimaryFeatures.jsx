@@ -179,7 +179,7 @@ function ExploreScreen({ custom, animated = false }) {
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
         <div>
-          <Image src={require('/public/images/screenshots/ExplorePage.png')} alt='explore page' width={320} height={100}/>
+          <Image src={require('/images/screenshots/ExplorePage.png')} alt='explore page' width={320} height={100}/>
           {/* <div className="space-y-6">
             {[
               { label: 'Full name', value: 'Albert H. Wiggin' },
