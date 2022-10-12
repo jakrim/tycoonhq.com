@@ -104,7 +104,7 @@ function PlayIcon(props) {
 function AppDemo() {
   return (
     <div className="absolute top-[100%)]">
-      <Image src={require('/TycoondesignGIF.gif')} alt='homescreen' width={318} height={100}/>
+      <Image src={{uri: '/TycoondesignGIF.gif'}} alt='homescreen' width={318} height={100}/>
     </div>
   )
 }
