@@ -99,12 +99,12 @@ function PlayIcon(props) {
   )
 }
 
-const gifAppPreview = require('/images/screenshots/TycoondesignGIF.gif')
+// const gifAppPreview = require('/TycoondesignGIF.gif')
 
 function AppDemo() {
   return (
     <div className="absolute top-[100%)]">
-      <Image src={gifAppPreview} alt='homescreen' width={318} height={100}/>
+      <Image src={'/TycoondesignGIF.gif'} alt='homescreen' width={318} height={100}/>
     </div>
   )
 }
