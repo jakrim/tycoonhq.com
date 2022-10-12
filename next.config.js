@@ -10,9 +10,9 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'tycoonhq.com',
+        hostname: '**',
         port: '',
-        pathname: '/',
+        pathname: '/**',
       },
     ],
   },
