@@ -179,23 +179,7 @@ function ExploreScreen({ custom, animated = false }) {
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
         <div>
-          <Image src={{uri: '/ExplorePage.png'}} alt='explore page' width={320} height={100}/>
-          {/* <div className="space-y-6">
-            {[
-              { label: 'Full name', value: 'Albert H. Wiggin' },
-              { label: 'Email address', value: 'awiggin@chase.com' },
-            ].map((field) => (
-              <div key={field.label}>
-                <div className="text-sm text-gray-500">{field.label}</div>
-                <div className="mt-2 border-b border-gray-200 pb-2 text-sm text-gray-900">
-                  {field.value}
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="mt-6 rounded-lg bg-cyan-500 py-2 px-3 text-center text-sm font-semibold text-white">
-            Invite person
-          </div> */}
+          <Image src={'/ExplorePage.png'} alt='explore page' width={320} height={100}/>
         </div>
       </MotionAppScreenBody>
     </AppScreen>

@@ -8,14 +8,14 @@ import { AppStoreLink } from '@/components/AppStoreLink'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { PhoneFrame } from '@/components/PhoneFrame'
-import logoBbc from '@/images/logos/bbc.svg'
-import logoCbs from '@/images/logos/cbs.svg'
-import logoCnn from '@/images/logos/cnn.svg'
-import logoFastCompany from '@/images/logos/fast-company.svg'
-import logoForbes from '@/images/logos/forbes.svg'
-import logoHuffpost from '@/images/logos/huffpost.svg'
-import logoTechcrunch from '@/images/logos/techcrunch.svg'
-import logoWired from '@/images/logos/wired.svg'
+// import logoBbc from '@/images/logos/bbc.svg'
+// import logoCbs from '@/images/logos/cbs.svg'
+// import logoCnn from '@/images/logos/cnn.svg'
+// import logoFastCompany from '@/images/logos/fast-company.svg'
+// import logoForbes from '@/images/logos/forbes.svg'
+// import logoHuffpost from '@/images/logos/huffpost.svg'
+// import logoTechcrunch from '@/images/logos/techcrunch.svg'
+// import logoWired from '@/images/logos/wired.svg'
 
 function BackgroundIllustration(props) {
   let id = useId()
@@ -86,25 +86,25 @@ function BackgroundIllustration(props) {
   )
 }
 
-function PlayIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
-      <circle cx="12" cy="12" r="11.5" stroke="#D4D4D4" />
-      <path
-        d="M9.5 14.382V9.618a.5.5 0 0 1 .724-.447l4.764 2.382a.5.5 0 0 1 0 .894l-4.764 2.382a.5.5 0 0 1-.724-.447Z"
-        fill="#A3A3A3"
-        stroke="#A3A3A3"
-      />
-    </svg>
-  )
-}
+// function PlayIcon(props) {
+//   return (
+//     <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
+//       <circle cx="12" cy="12" r="11.5" stroke="#D4D4D4" />
+//       <path
+//         d="M9.5 14.382V9.618a.5.5 0 0 1 .724-.447l4.764 2.382a.5.5 0 0 1 0 .894l-4.764 2.382a.5.5 0 0 1-.724-.447Z"
+//         fill="#A3A3A3"
+//         stroke="#A3A3A3"
+//       />
+//     </svg>
+//   )
+// }
 
 // const gifAppPreview = require('/TycoondesignGIF.gif')
 
 function AppDemo() {
   return (
     <div className="absolute top-[100%)]">
-      <Image src={{uri: '/TycoondesignGIF.gif'}} alt='homescreen' width={318} height={100}/>
+      <Image src={'/TycoondesignGIF.gif'} alt='homescreen' width={318} height={100}/>
     </div>
   )
 }
