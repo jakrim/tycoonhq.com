@@ -104,7 +104,7 @@ function BackgroundIllustration(props) {
 function AppDemo() {
   return (
     <div className="absolute top-[100%)]">
-      <Image src={'/TycoondesignGIF.gif'} alt='homescreen' width={318} height={100}/>
+      <Image src={'/TycoondesignGIF.gif'} alt='homescreen' unoptimized quality={100}  width={318} height={100}/>
     </div>
   )
 }

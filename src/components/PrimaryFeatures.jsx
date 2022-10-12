@@ -179,7 +179,7 @@ function ExploreScreen({ custom, animated = false }) {
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
         <div>
-          <Image src={'/ExplorePage.png'} alt='explore page' width={320} height={100}/>
+          <Image src={'/ExplorePage.png'} alt='explore page' quality={100} width={320} height={100}/>
         </div>
       </MotionAppScreenBody>
     </AppScreen>
