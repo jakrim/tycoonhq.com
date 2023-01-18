@@ -2,7 +2,7 @@ import { useId, useRef, useState } from 'react'
 import Image from 'next/future/image'
 import clsx from 'clsx'
 import { motion, useInView, useMotionValue } from 'framer-motion'
-
+import { Input } from '@material-tailwind/react'
 import { AppScreen } from '@/components/AppScreen'
 import { AppStoreLink } from '@/components/AppStoreLink'
 import { Button } from '@/components/Button'
@@ -103,27 +103,83 @@ function BackgroundIllustration(props) {
 
 function AppDemo() {
   return (
-    <div className="absolute top-[100%)]">
-      <Image src={'/TycoondesignGIF.gif'} alt='homescreen' unoptimized quality={100}  width={318} height={100}/>
+    <div className="top-[100%)] absolute">
+      <Image
+        src={'/TycoondesignGIF.gif'}
+        alt="homescreen"
+        unoptimized
+        quality={100}
+        width={318}
+        height={100}
+      />
     </div>
   )
 }
 
 export function Hero() {
+  const [emailValue, setEmailValue] = useState('')
+  console.log('🚀 ~ file: Hero.jsx:121 ~ Hero ~ emailValue', emailValue)
+
+  const handleSubmit = () => {
+    // function to call email api
+  }
+
   return (
-    <div className="overflow-hidden py-20 sm:py-32 lg:pb-32 xl:pb-36">
+    <div className="sm:py-15 overflow-hidden py-20 lg:pb-32 xl:pb-36">
       <Container>
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-            A curated social platform delivering the {`world's`} best people and ideas.
+              A curated social platform delivering the world’s best people and
+              ideas.
             </h1>
             <p className="mt-6 text-lg text-gray-600">
-              The most successful, influential, and knowledgeable people in one place
-              sharing the stories, thoughts, and ideas, that made them successful.
+              The most successful, influential, and knowledgeable people in one
+              place sharing the stories, thoughts, and ideas, that made them
+              successful.
             </p>
-            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
-              <AppStoreLink />
+            <div className="flex-center flex">
+              <form
+                className="mt-8 max-w-sm"
+                onSubmit={() => {
+                  handleSubmit
+                }}
+              >
+                <p className="text-gray-1000 text-xl">
+                  Stay up to date on our launch!
+                </p>
+                <div className="flex items-center border-b border-blue-500 py-2">
+                  {/* <input
+                    className="mr-3 w-full appearance-none border-none bg-transparent py-1 px-2 leading-tight text-gray-700 focus:outline-none"
+                    type="text"
+                    placeholder="Jane Doe"
+                    aria-label="Full name"
+                  /> */}
+                  <div className="mr-3">
+                    <Input
+                      type="email"
+                      placeholder="Enter your email"
+                      color="yellow"
+                      variant="standard"
+                      className="mr-5 w-full appearance-none border-none"
+                      // label="Standard"
+                      value={emailValue}
+                      onChange={(v) => setEmailValue(v.target.value)}
+                      size="md"
+                    />
+                  </div>
+                  <button
+                    onClick={handleSubmit}
+                    className="text-md flex-shrink-0 rounded border-4 border-blue-500 bg-blue-500 py-1 px-2 text-white hover:border-blue-700 hover:bg-blue-700"
+                    type="button"
+                  >
+                    Sign Up
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div className=" flex flex-wrap gap-x-6 gap-y-4">
+              {/* <AppStoreLink /> */}
               {/* <Button
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                 variant="outline"
@@ -142,11 +198,11 @@ export function Hero() {
             </div>
           </div>
           {/* <div className="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6"> */}
-            {/* <div className="mx-auto mt-70 flex max-w-xl flex-wrap justify-center gap-x-10 gap-y-8 lg:mx-0 lg:justify-start"/> */}
-            {/* <p className="text-center text-sm font-semibold text-gray-900 lg:text-left">
+          {/* <div className="mx-auto mt-70 flex max-w-xl flex-wrap justify-center gap-x-10 gap-y-8 lg:mx-0 lg:justify-start"/> */}
+          {/* <p className="text-center text-sm font-semibold text-gray-900 lg:text-left">
               As featured in
             </p> */}
-            {/* <ul
+          {/* <ul
               role="list"
             >
               {[

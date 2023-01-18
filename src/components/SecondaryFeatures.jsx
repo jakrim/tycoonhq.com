@@ -4,15 +4,15 @@ import { Container } from '@/components/Container'
 
 const features = [
   {
-    name: 'Invest any amount',
+    name: 'An emphasis on discoverability',
     description:
-      'Whether it’s $1 or $1,000,000, we can put your money to work for you.',
-    icon: DeviceArrowIcon,
+      'You don’t know who you don’t know. Tycoon helps you find experts relevent to you.',
+    icon: DeviceListIcon,
   },
   {
-    name: 'Build a balanced portfolio',
+    name: 'All of their socials in one place',
     description:
-      'Invest in different industries to find the most opportunities to win huge.',
+      'We make it easy to discover and follow Tycoons across social platforms.',
     icon: DeviceCardsIcon,
   },
   {
@@ -25,7 +25,7 @@ const features = [
     name: 'Profit from your network',
     description:
       'Invite new insiders to get tips faster and beat even other Pocket users.',
-    icon: DeviceListIcon,
+    icon: DeviceArrowIcon,
   },
   {
     name: 'Encrypted and anonymized',
@@ -196,17 +196,19 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-          We’re on a mission to help bridge the gap between the world’s most successful people, and you.
+            Bridging the gap between you and the
+            world’s most successful people.
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            {`It's like masterclass meets Twitter. The world's most successful people sharing their stories about their life, every day.`}
+            It’s like masterclass meets Twitter. The world’s most successful
+            people sharing their stories about their life, every day.
           </p>
         </div>
         <ul
           role="list"
           className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3"
         >
-          {/* {features.map((feature) => (
+          {features.map((feature) => (
             <li
               key={feature.name}
               className="rounded-2xl border border-gray-200 p-8"
@@ -217,7 +219,7 @@ export function SecondaryFeatures() {
               </h3>
               <p className="mt-2 text-gray-700">{feature.description}</p>
             </li>
-          ))} */}
+          ))}
         </ul>
       </Container>
     </section>

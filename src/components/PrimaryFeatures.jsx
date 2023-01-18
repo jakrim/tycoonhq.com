@@ -9,16 +9,16 @@ import { AppScreen } from '@/components/AppScreen'
 import { CircleBackground } from '@/components/CircleBackground'
 import { Container } from '@/components/Container'
 import { PhoneFrame } from '@/components/PhoneFrame'
-import {
-  DiageoLogo,
-  LaravelLogo,
-  MirageLogo,
-  ReversableLogo,
-  StatamicLogo,
-  StaticKitLogo,
-  TransistorLogo,
-  TupleLogo,
-} from '@/components/StockLogos'
+// import {
+//   DiageoLogo,
+//   LaravelLogo,
+//   MirageLogo,
+//   ReversableLogo,
+//   StatamicLogo,
+//   StaticKitLogo,
+//   TransistorLogo,
+//   TupleLogo,
+// } from '@/components/StockLogos'
 
 const MotionAppScreenHeader = motion(AppScreen.Header)
 const MotionAppScreenBody = motion(AppScreen.Body)

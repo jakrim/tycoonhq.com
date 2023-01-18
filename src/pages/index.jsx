@@ -33,10 +33,10 @@ export default function Home() {
         <Hero />
         <PrimaryFeatures />
         <SecondaryFeatures />
-        {/* <CallToAction /> */}
-        {/* <Reviews /> */}
+        <CallToAction />
+        <Reviews />
         {/* <Pricing /> */}
-        {/* <Faqs /> */}
+        <Faqs />
       </main>
       <Footer />
     </>
