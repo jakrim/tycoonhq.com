@@ -10,35 +10,35 @@ const features = [
     icon: DeviceListIcon,
   },
   {
-    name: 'All of their socials in one place',
+    name: 'A huge timesaver',
     description:
-      'We make it easy to discover and follow Tycoons across social platforms.',
-    icon: DeviceCardsIcon,
-  },
-  {
-    name: 'Trade in real-time',
-    description:
-      'Get insider tips on big stock moves and act on them within seconds.',
+      'Filter by topics and speaker types to find the content you’re looking for.',
     icon: DeviceClockIcon,
   },
   {
-    name: 'Profit from your network',
+    name: 'All social links in one place',
     description:
-      'Invite new insiders to get tips faster and beat even other Pocket users.',
-    icon: DeviceArrowIcon,
+      'Discover and browse content across the web.',
+    icon: DeviceCardsIcon,
   },
-  {
-    name: 'Encrypted and anonymized',
-    description:
-      'Cutting-edge security technology that even the NSA doesn’t know about keeps you hidden.',
-    icon: DeviceLockIcon,
-  },
-  {
-    name: 'Portfolio tracking',
-    description:
-      'Watch your investments grow exponentially, leaving other investors in the dust.',
-    icon: DeviceChartIcon,
-  },
+  // {
+  //   name: 'Create authentic audio posts',
+  //   description:
+  //     'COMING SOON: Record and share directly to your audience.',
+  //   icon: DeviceArrowIcon,
+  // },
+  // {
+  //   name: 'Encrypted and anonymized',
+  //   description:
+  //     'Cutting-edge security technology that even the NSA doesn’t know about keeps you hidden.',
+  //   icon: DeviceLockIcon,
+  // },
+  // {
+  //   name: 'Portfolio tracking',
+  //   description:
+  //     'Watch your investments grow exponentially, leaving other investors in the dust.',
+  //   icon: DeviceChartIcon,
+  // },
 ]
 
 function DeviceArrowIcon(props) {
