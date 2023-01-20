@@ -309,7 +309,6 @@ function FeaturesDesktop() {
                     key={feature.name + changeCount}
                     className="col-start-1 row-start-1 flex focus:outline-offset-[32px] [&:not(:focus-visible)]:focus:outline-none"
                   >
-                    {console.log("🚀 ~ file: PrimaryFeatures.jsx ~ line 348 ~ FeaturesDesktop ~ featureIndex", featureIndex)}
                     <feature.screen
                       animated={featureIndex === 1 ? false : true}
                       custom={{ isForwards, changeCount }}

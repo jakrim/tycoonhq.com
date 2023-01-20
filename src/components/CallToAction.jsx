@@ -13,12 +13,13 @@ export function CallToAction() {
       </div>
       <Container className="relative">
         <div className="mx-auto max-w-md sm:text-center">
-          <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
-            You don’t know who you don’t know
+          <h2 className="text-3xl font-medium tracking-tight text-white sm:text-5xl">
+            You don’t know <br/>who you don’t know.
           </h2>
           <p className="mt-4 text-lg text-gray-300">
             Have questions about your career or your life?
-            Unsure where to start? Tycoon◊ is here for you.
+            <br/>
+            Who better to learn from than the world’s best.
           </p>
           <div className="mt-8 flex justify-center">
             <AppStoreLink color="white" />

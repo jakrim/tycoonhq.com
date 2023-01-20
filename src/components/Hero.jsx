@@ -8,6 +8,7 @@ import { AppStoreLink } from '@/components/AppStoreLink'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { PhoneFrame } from '@/components/PhoneFrame'
+import { TextField } from '@/components/Fields'
 // import logoBbc from '@/images/logos/bbc.svg'
 // import logoCbs from '@/images/logos/cbs.svg'
 // import logoCnn from '@/images/logos/cnn.svg'
@@ -135,48 +136,33 @@ export function Hero() {
             </h1>
             <p className="mt-6 text-lg text-gray-600">
               The most successful, influential, and knowledgeable people in one
-              place sharing the stories, thoughts, and ideas, that made them
+              place sharing the stories, habits, and ideas that made them
               successful.
             </p>
             <div className="flex-center flex">
-              <form
-                className="mt-8 max-w-sm"
-                onSubmit={() => {
-                  handleSubmit
-                }}
-              >
-                <p className="text-gray-1000 text-xl">
-                  Stay up to date on our launch!
+              <div className="mt-8 max-w-sm">
+                <p className="text-gray-1000 text-xl mb-2">
+                  Get first access to our beta!
                 </p>
-                <div className="flex items-center border-b border-blue-500 py-2">
-                  {/* <input
-                    className="mr-3 w-full appearance-none border-none bg-transparent py-1 px-2 leading-tight text-gray-700 focus:outline-none"
-                    type="text"
-                    placeholder="Jane Doe"
-                    aria-label="Full name"
-                  /> */}
-                  <div className="mr-3">
-                    <Input
-                      type="email"
-                      placeholder="Enter your email"
-                      color="yellow"
-                      variant="standard"
-                      className="mr-5 w-full appearance-none border-none"
-                      // label="Standard"
-                      value={emailValue}
-                      onChange={(v) => setEmailValue(v.target.value)}
-                      size="md"
-                    />
-                  </div>
-                  <button
-                    onClick={handleSubmit}
-                    className="text-md flex-shrink-0 rounded border-4 border-blue-500 bg-blue-500 py-1 px-2 text-white hover:border-blue-700 hover:bg-blue-700"
-                    type="button"
-                  >
-                    Sign Up
-                  </button>
-                </div>
-              </form>
+                <form
+                  onSubmit={() => {
+                    handleSubmit
+                  }}
+                  className="flex w-full justify-center md:w-auto">
+                  <TextField
+                    type="email"
+                    aria-label="Email address"
+                    placeholder="Email address"
+                    autoComplete="email"
+                    required
+                    className="w-60 min-w-0 shrink"
+                  />
+                  <Button type="submit" color="cyan" className="ml-4 flex-none">
+                    <span className="hidden lg:inline">Join our newsletter</span>
+                    <span className="lg:hidden">Join newsletter</span>
+                  </Button>
+                </form>
+              </div>
             </div>
             <div className=" flex flex-wrap gap-x-6 gap-y-4">
               {/* <AppStoreLink /> */}

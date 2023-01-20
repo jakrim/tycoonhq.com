@@ -8,62 +8,58 @@ import { Logomark } from '@/components/Logo'
 
 const plans = [
   {
-    name: 'Starter',
+    name: 'Avid Learner',
     featured: false,
     price: { Monthly: '$0', Annually: '$0' },
-    description:
-      'You’re new to investing but want to do it right. Get started for free.',
+    description: 'Want to follow, listen to, and learn from the world’s best?',
     button: {
       label: 'Get started for free',
-      href: '/register',
+      // href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every day',
-      'Invest up to $1,500 each month',
+      'All the social features you know and love',
+      // 'Profile displaying your favorite Tycoons',
+      'Full access to content and discovery',
     ],
     logomarkClassName: 'fill-gray-300',
   },
   {
-    name: 'Investor',
-    featured: false,
-    price: { Monthly: '$7', Annually: '$70' },
-    description:
-      'You’ve been investing for a while. Invest more and grow your wealth faster.',
+    name: 'Future Tycoon',
+    featured: true,
+    price: { Monthly: '$5', Annually: '$42' },
+    description: 'You have an appetite for success and want the world’s greatest in your ears',
     button: {
       label: 'Subscribe',
-      href: '/register',
+      // href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every hour',
-      'Invest up to $15,000 each month',
-      'Basic transaction anonymization',
+      'Access to unique courses built through the wealth of knowledge on the platform',
+      'Advanced curation features to tailor your experience',
+      'Submit questions for Tycoons to answer',
+      'Receive a badge prioritizing your comments at the top of Tycoon posts',
+      // 'Basic transaction anonymization',
     ],
     logomarkClassName: 'fill-gray-500',
   },
-  {
-    name: 'VIP',
-    featured: true,
-    price: { Monthly: '$199', Annually: '$1,990' },
-    description:
-      'You’ve got a huge amount of assets but it’s not enough. To the moon.',
-    button: {
-      label: 'Subscribe',
-      href: '/register',
-    },
-    features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'Real-time tip notifications',
-      'No investment limits',
-      'Advanced transaction anonymization',
-      'Automated tax-loss harvesting',
-    ],
-    logomarkClassName: 'fill-cyan-500',
-  },
+  // {
+  //   name: 'VIP',
+  //   featured: true,
+  //   price: { Monthly: '$199', Annually: '$1,990' },
+  //   description: 'The greatest learning experience on planet earth.',
+  //   button: {
+  //     label: 'Subscribe',
+  //     // href: '/register',
+  //   },
+  //   features: [
+  //     'Commission-free trading',
+  //     'Multi-layered encryption',
+  //     'Real-time tip notifications',
+  //     'No investment limits',
+  //     'Advanced transaction anonymization',
+  //     'Automated tax-loss harvesting',
+  //   ],
+  //   logomarkClassName: 'fill-cyan-500',
+  // },
 ]
 
 function CheckIcon(props) {
@@ -204,11 +200,10 @@ export function Pricing() {
             id="pricing-title"
             className="text-3xl font-medium tracking-tight text-gray-900"
           >
-            Flat pricing, no management fees.
+            A Service by the People for the People
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            Whether you’re one person trying to get ahead or a big firm trying
-            to take over the world, we’ve got a plan for you.
+            We don’t allow businesses or brands to spam your feed with ads, <br/> so we’ve created a new model for social.
           </p>
         </div>
 
@@ -258,7 +253,7 @@ export function Pricing() {
           </div>
         </div>
 
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-10 sm:mt-20 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-start gap-x-20 gap-y-10 sm:mt-20 lg:max-w-none lg:grid-cols-2">
           {plans.map((plan) => (
             <Plan key={plan.name} {...plan} activePeriod={activePeriod} />
           ))}

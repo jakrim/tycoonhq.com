@@ -5,53 +5,55 @@ import { Container } from '@/components/Container'
 const faqs = [
   [
     {
-      question: 'How do I know the tips are good?',
+      question: 'Why is this different than other platforms?',
       answer:
-        'Our whole business depends on our tips being good, so it’s in our best interest that they are. The results of our customers speak for themselves, just trust us.',
+        'By only allowing experts in various industries to post, we’re eliminating the waste of time experienced on current platforms.',
     },
     {
-      question: 'Isn’t this insider trading?',
+      question: 'What will this platform accomplish if successful?',
       answer:
-        'Yes exactly. But at scale! Historically you could only make insider trades with knowledge from your direct network. Pocket brings you insider trading tips from people you don’t even know.',
+        'Our mission is to bridge the gap between you and the world’s most successful individuals, and create one monumental space that will live on forever after these greats have passed on.',
     },
     {
-      question: 'But isn’t insider trading illegal?',
+      question: 'What will these experts gain from posting here?',
       answer:
-        'Here’s the thing: you’re the one doing the insider trading, not us. We’re just giving you the tips and some tools to make trades. We’re not doing anything wrong here.',
-    },
-  ],
-  [
-    {
-      question: 'Do the people giving you tips realize what they are doing?',
-      answer:
-        'Again I would argue this isn’t really our responsibility. People make their own choices. If they don’t research the consequences that’s on them, not on us.',
-    },
-    {
-      question: 'Where is Pocket based?',
-      answer:
-        'Let’s just say it’s not somewhere where the SEC is going to find us.',
-    },
-    {
-      question: 'Is there any age limit to trading on Pocket?',
-      answer:
-        'For our free plan, the age limit is based on the minimum age to trade in your country of residence. Our VIP plan uses advanced transaction anonymization though, so you can use that plan even if you’re 9 years old. Or a dog.',
+      'Expanding their audience, influence, and message, by introducing them to people who may have never heard of them before.',
+      // 'Our goal is to be the most effective way for the world’s most successful individuals to share a message to the people who would love to listen to them speak.',
+      // 'By building a product so pleasurable to use, we will draw large audiences that have never heard of some ',
     },
   ],
   [
     {
-      question: 'How did you get this on the App Store?',
+      question: 'What is the criteria to become a "Tycoon"?',
       answer:
-        'Honestly we were surprised too, but eventually we found out that the app reviewer found the app so compelling they approved it just so they could use it themselves.',
+        'A Tycoon is anyone who dominates their field in terms of knowledge, influence, wealth, or success. We believe there is a magic in bringing this caliber of people together in one place.',
     },
     {
-      question: 'How do I explain the money I withdraw from Pocket to the IRS?',
+      question: 'Are you hiring?',
       answer:
-        'This feels like one-hundred percent a you problem. Pocket is not responsible in any way for your tax returns.',
+        'We are hiring exceptional people passionate about helping others find their purpose in life. Send us an email!',
     },
     {
-      question: 'How do I become an insider?',
+      question: 'How will Tycoon make money?',
       answer:
-        'Contact us with some details about your industry and the type of access you have to apply for an insider account. Once approved, we’ll send you a guide on collecting insider information without being detected at work.',
+        'We are pursuing a freemium model where users will gain access to special features based on a subscription to the platform.',
+    },
+  ],
+  [
+    {
+      question: 'What kind of content will Tycoon’s post?',
+      answer:
+        'It’s entirely up to them and their audience, our goal is only to platform them and increase their reach. We believe learning from the best will help others achieve individual success!',
+    },
+    {
+      question: 'What is the strategy for bringing Tycoons on to post?',
+      answer:
+        'v1 of the product is to build an encyclopedia of Tycoons who you may not know and allow you to find them across the web. v2 is to allow them to post original content on the platform.',
+    },
+    {
+      question: 'How do I join the beta?',
+      answer:
+        'We’ll be releasing v1 in the next few months. Join the waitlist by entering your email!',
     },
   ],
 ]

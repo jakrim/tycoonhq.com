@@ -51,7 +51,7 @@ const reviews = [
   {
     title: 'So. Much. Fun!',
     body: 'Tycoon makes finding and listening to smart people fun.',
-    author: 'AddictAlly',
+    author: 'Superman',
     rating: 5,
   },
   {
@@ -238,10 +238,10 @@ export function Reviews() {
           id="reviews-title"
           className="text-3xl font-medium tracking-tight text-gray-900 sm:text-center"
         >
-          Finally find your world-class mentor.
+          Finally find your World-Class Mentor.
         </h2>
         <p className="mt-2 text-lg text-gray-600 sm:text-center">
-        Tycoon is a safe space for influential people to speak more candidly about their success, meaning in life, and what is important to them.
+        We’re building a safe space for influential people to speak more candidly about their success,<br/>allowing others to achieve success in their lives.
         </p>
         <ReviewGrid />
       </Container>

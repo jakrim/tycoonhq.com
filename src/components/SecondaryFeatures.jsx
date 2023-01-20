@@ -4,41 +4,41 @@ import { Container } from '@/components/Container'
 
 const features = [
   {
-    name: 'An emphasis on discoverability',
+    name: 'A new way to discover mentors',
     description:
       'You don’t know who you don’t know. Tycoon helps you find experts relevent to you.',
     icon: DeviceListIcon,
   },
   {
-    name: 'A huge timesaver',
+    name: 'Find content faster',
     description:
       'Filter by topics and speaker types to find the content you’re looking for.',
     icon: DeviceClockIcon,
   },
   {
-    name: 'All social links in one place',
+    name: 'All social platforms in one place',
     description:
-      'Discover and browse content across the web.',
+      'Discover and browse Tyoon content across other social media.',
     icon: DeviceCardsIcon,
   },
-  // {
-  //   name: 'Create authentic audio posts',
-  //   description:
-  //     'COMING SOON: Record and share directly to your audience.',
-  //   icon: DeviceArrowIcon,
-  // },
-  // {
-  //   name: 'Encrypted and anonymized',
-  //   description:
-  //     'Cutting-edge security technology that even the NSA doesn’t know about keeps you hidden.',
-  //   icon: DeviceLockIcon,
-  // },
-  // {
-  //   name: 'Portfolio tracking',
-  //   description:
-  //     'Watch your investments grow exponentially, leaving other investors in the dust.',
-  //   icon: DeviceChartIcon,
-  // },
+  {
+    name: 'Broadcast a message',
+    description:
+    'COMING SOON: Record and share your voice directly to your audience.',
+    icon: DeviceArrowIcon,
+  },
+  {
+    name: 'Categorize your posts',
+    description:
+    'COMING SOON: Building more effective discoverability.',
+    icon: DeviceClockIcon,
+  },
+  {
+    name: 'An emphasis on curation',
+    description:
+      'COMING SOON: Stand out among only the world’s top experts, aka Tycoons',
+    icon: DeviceCardsIcon,
+  },
 ]
 
 function DeviceArrowIcon(props) {
@@ -200,8 +200,7 @@ export function SecondaryFeatures() {
             world’s most successful people.
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            It’s like masterclass meets Twitter. The world’s most successful
-            people sharing their stories about their life, every day.
+            It’s like masterclass meets Twitter.<br/> Tycoons sharing stories about their life, every day.
           </p>
         </div>
         <ul
