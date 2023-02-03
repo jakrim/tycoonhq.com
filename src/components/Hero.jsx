@@ -122,7 +122,6 @@ function AppDemo() {
 
 export function Hero() {
   const [emailValue, setEmailValue] = useState('')
-  console.log("🚀 ~ emailValue", emailValue)
 
   const handleSubmit = async (e) => {
     const notion = new Client({
@@ -147,7 +146,6 @@ export function Hero() {
         },
       },
     });
-    console.log("🚀 ~ file: Hero.jsx:150 ~ handleSubmit ~ response", response)
   }
 
 
