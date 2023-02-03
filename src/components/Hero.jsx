@@ -9,6 +9,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { PhoneFrame } from '@/components/PhoneFrame'
 import { TextField } from '@/components/Fields'
+const { Client, LogLevel } = require('@notionhq/client');
 // import logoBbc from '@/images/logos/bbc.svg'
 // import logoCbs from '@/images/logos/cbs.svg'
 // import logoCnn from '@/images/logos/cnn.svg'
@@ -117,13 +118,41 @@ function AppDemo() {
   )
 }
 
+// const { NOTION_API_TOKEN, NOTION_DATABASE_ID } = process.env;
+
 export function Hero() {
   const [emailValue, setEmailValue] = useState('')
-  console.log('🚀 ~ file: Hero.jsx:121 ~ Hero ~ emailValue', emailValue)
+  console.log("🚀 ~ emailValue", emailValue)
 
-  const handleSubmit = () => {
-    // function to call email api
+  const handleSubmit = async (e) => {
+    const notion = new Client({
+      auth: process.env.NOTION_API_TOKEN,
+      logLevel: LogLevel.DEBUG,
+    });
+    e.preventDefault()
+
+    const response = await notion.pages.create({
+      parent: {
+        database_id: process.env.NOTION_DATABASE_ID,
+      },
+      properties: {
+        Email: {
+          title: [
+            {
+              text: {
+                content: e.target.value,
+              },
+            },
+          ],
+        },
+      },
+    });
+    console.log("🚀 ~ file: Hero.jsx:150 ~ handleSubmit ~ response", response)
   }
+
+
+    // function to call email api
+  // }
 
   return (
     <div className="sm:py-15 overflow-hidden py-20 lg:pb-32 xl:pb-36">
@@ -145,9 +174,7 @@ export function Hero() {
                   Get first access to our beta!
                 </p>
                 <form
-                  onSubmit={() => {
-                    handleSubmit
-                  }}
+                  onSubmit={handleSubmit}
                   className="flex w-full justify-center md:w-auto">
                   <TextField
                     type="email"
@@ -156,6 +183,8 @@ export function Hero() {
                     autoComplete="email"
                     required
                     className="w-60 min-w-0 shrink"
+                    value={emailValue}
+                    onChange={((e) => setEmailValue(e.target.value))}
                   />
                   <Button type="submit" color="cyan" className="ml-4 flex-none">
                     <span className="hidden lg:inline">Join our newsletter</span>

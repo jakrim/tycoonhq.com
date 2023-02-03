@@ -12,6 +12,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.2",
     "@material-tailwind/react": "^1.2.4",
+    "@notionhq/client": "^2.2.3",
     "@tailwindcss/forms": "^0.5.3",
     "autoprefixer": "^10.4.13",
     "clsx": "^1.2.1",
