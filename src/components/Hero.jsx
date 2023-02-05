@@ -172,6 +172,7 @@ export function Hero() {
                   Get first access to our beta!
                 </p>
                 <form
+                  data-netlify="true"
                   onSubmit={handleSubmit}
                   className="flex w-full justify-center md:w-auto">
                   <TextField
