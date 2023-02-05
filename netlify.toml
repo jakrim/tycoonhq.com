@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "https://www.tycoonhq.com/"
+  from = "/*"
   to = "https://www.notion.so/"
   status = 200
   force = true
