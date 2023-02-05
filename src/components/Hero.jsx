@@ -124,6 +124,7 @@ export function Hero() {
   const [emailValue, setEmailValue] = useState('')
 
   const handleSubmit = async (e) => {
+    e.preventDefault()
     const notion = new Client({
       auth: process.env.NOTION_API_TOKEN,
       logLevel: LogLevel.DEBUG,
