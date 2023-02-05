@@ -1,6 +1,6 @@
 [[redirects]]
-  from = "https://www.notion.so/emailsplease/*"
-  to = "https://www.tycoonhq.com/"
+  from = "https://www.tycoonhq.com/"
+  to = "https://www.notion.so/emailsplease/*"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
