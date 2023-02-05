@@ -173,6 +173,7 @@ export function Hero() {
                   Get first access to our beta!
                 </p>
                 <form
+                  method="POST"
                   data-netlify="true"
                   name="newsletter"
                   onSubmit={handleSubmit}
