@@ -125,29 +125,45 @@ export function Hero() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const notion = new Client({
-      auth: process.env.NOTION_API_TOKEN,
-      logLevel: LogLevel.DEBUG,
-    });
-    e.preventDefault()
 
-    const response = await notion.pages.create({
-      parent: {
-        database_id: process.env.NOTION_DATABASE_ID,
-      },
-      properties: {
-        Email: {
-          title: [
-            {
-              text: {
-                content: e.target.value,
-              },
-            },
-          ],
-        },
-      },
-    });
-  }
+    const myForm = e.target;
+  const formData = new FormData(myForm);
+
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => console.log("Form successfully submitted"))
+    .catch((error) => alert(error));
+};
+// document
+//   .querySelector("form")
+//   .addEventListener("submit", handleSubmit);
+
+// const notion = new Client({
+    //   auth: process.env.NOTION_API_TOKEN,
+    //   logLevel: LogLevel.DEBUG,
+    // });
+    // e.preventDefault()
+
+    // const response = await notion.pages.create({
+    //   parent: {
+    //     database_id: process.env.NOTION_DATABASE_ID,
+    //   },
+    //   properties: {
+    //     Email: {
+    //       title: [
+    //         {
+    //           text: {
+    //             content: e.target.value,
+    //           },
+    //         },
+    //       ],
+    //     },
+    //   },
+    // });
+  // }
 
 
     // function to call email api
@@ -173,12 +189,14 @@ export function Hero() {
                   Get first access to our beta!
                 </p>
                 <form
-                  method="POST"
-                  data-netlify="true"
                   name="newsletter"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field" // this is the name of the hidden input
+                  method="post"
                   onSubmit={handleSubmit}
                   className="flex w-full justify-center md:w-auto">
                   <TextField
+                    input-name="email"
                     type="email"
                     aria-label="Email address"
                     placeholder="Email address"
@@ -186,10 +204,13 @@ export function Hero() {
                     required
                     className="w-60 min-w-0 shrink"
                     value={emailValue}
+                    name="emailInput"
+                    // value="newsletter"
                     onChange={((e) => setEmailValue(e.target.value))}
                   />
+                  <input name="bot-field" type="hidden" /> {/* for bots */}
                   <input type="hidden" name="emailInput" value="newsletter" />
-                  <Button type="submit" color="cyan" className="ml-4 flex-none">
+                  <Button type="submit" color="blue" className="ml-4 flex-none">
                     <span className="hidden lg:inline">Join our newsletter</span>
                     <span className="lg:hidden">Join newsletter</span>
                   </Button>
