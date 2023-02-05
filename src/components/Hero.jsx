@@ -123,19 +123,32 @@ function AppDemo() {
 export function Hero() {
   const [emailValue, setEmailValue] = useState('')
 
+
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) =>
+          encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  }
+
+
   const handleSubmit = async (e) => {
     e.preventDefault()
 
-    const myForm = e.target;
-  const formData = new FormData(myForm);
 
   fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
+    body: encode({
+      "form-name": e.target.getAttribute("emailInput"),
+      ...emailValue,
+    }),
   })
-    .then(() => console.log("Form successfully submitted"))
+    .then(() => console.log('successfully sent:', emailValue))
     .catch((error) => alert(error));
+
 };
 // document
 //   .querySelector("form")
@@ -188,10 +201,14 @@ export function Hero() {
                 <p className="text-gray-1000 text-xl mb-2">
                   Get first access to our beta!
                 </p>
+                {/* For bots */}
+                <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+                  <input type="email" name="email" />
+                  <textarea name="message"></textarea>
+                </form>
                 <form
-                  name="newsletter"
                   data-netlify="true"
-                  data-netlify-honeypot="bot-field" // this is the name of the hidden input
+                  name="newsletter"
                   method="post"
                   onSubmit={handleSubmit}
                   className="flex w-full justify-center md:w-auto">
@@ -205,11 +222,23 @@ export function Hero() {
                     className="w-60 min-w-0 shrink"
                     value={emailValue}
                     name="emailInput"
-                    // value="newsletter"
                     onChange={((e) => setEmailValue(e.target.value))}
                   />
-                  <input name="bot-field" type="hidden" /> {/* for bots */}
-                  <input type="hidden" name="emailInput" value="newsletter" />
+                  <input type="hidden" name="form-name" value="newsletter" />
+                  {/* <input
+                    input-name="email"
+                    type="email"
+                    aria-label="Email address"
+                    placeholder="Email address"
+                    autoComplete="email"
+                    required
+                    className="w-60 min-w-0 shrink"
+                    value={emailValue}
+                    type='text'
+                    name="emailInput"
+                    onChange={((e) => setEmailValue(e.target.value))}
+                  /> */}
+                  {/* <input type="submit" className="ml-4 flex-none"/> */}
                   <Button type="submit" color="blue" className="ml-4 flex-none">
                     <span className="hidden lg:inline">Join our newsletter</span>
                     <span className="lg:hidden">Join newsletter</span>
