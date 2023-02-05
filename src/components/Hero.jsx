@@ -188,6 +188,7 @@ export function Hero() {
                     value={emailValue}
                     onChange={((e) => setEmailValue(e.target.value))}
                   />
+                  <input type="hidden" name="emailInput" value="newsletter" />
                   <Button type="submit" color="cyan" className="ml-4 flex-none">
                     <span className="hidden lg:inline">Join our newsletter</span>
                     <span className="lg:hidden">Join newsletter</span>
