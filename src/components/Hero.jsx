@@ -209,8 +209,7 @@ export function Hero() {
                 <form
                   data-netlify="true"
                   name="newsletter"
-                  method="post"
-                  onSubmit={handleSubmit}
+                  method="POST"
                   className="flex w-full justify-center md:w-auto">
                   <TextField
                     input-name="email"
@@ -221,7 +220,7 @@ export function Hero() {
                     required
                     className="w-60 min-w-0 shrink"
                     value={emailValue}
-                    name="emailInput"
+                    name="email"
                     onChange={((e) => setEmailValue(e.target.value))}
                   />
                   <input type="hidden" name="form-name" value="newsletter" />
