@@ -208,7 +208,7 @@ export function Hero() {
                 </form>
                 <form
                   data-netlify="true"
-                  name="newsletter"
+                  name="newsletter-hero"
                   method="POST"
                   className="flex w-full justify-center md:w-auto">
                   <TextField
