@@ -223,7 +223,7 @@ export function Hero() {
                     name="email"
                     onChange={((e) => setEmailValue(e.target.value))}
                   />
-                  <input type="hidden" name="form-name" value="newsletter" />
+                  <input type="hidden" name="form-name" value="newsletter-hero" />
                   {/* <input
                     input-name="email"
                     type="email"
