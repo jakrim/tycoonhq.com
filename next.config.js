@@ -17,7 +17,7 @@ const nextConfig = {
     ],
   },
   env: {
-    NOTION_APP_API_KEY: process.env.NOTION_APP_API_KEY,
+    NOTION_APP_API_KEY: process.env.NOTION_TOKEN,
     NOTION_DATABASE_ID: process.env.NOTION_DATABASE_ID
   }
 }
