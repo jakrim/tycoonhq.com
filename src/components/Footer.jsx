@@ -56,7 +56,7 @@ export function Footer() {
           </div>
         </div>
         <div className="flex flex-col items-center border-t border-gray-200 pt-8 pb-12 md:flex-row-reverse md:justify-between md:pt-6">
-          <form data-netlify="true" name="newsletter-footer" className="flex w-full justify-center md:w-auto">
+          <form data-netlify="true" name="newsletter-footer" method="POST" className="flex w-full justify-center md:w-auto">
             <TextField
               input-name="email"
               type="email"
@@ -67,7 +67,7 @@ export function Footer() {
               className="w-60 min-w-0 shrink"
               name="email"
             />
-            <input type="hidden" name="form-name" value="newsletter" />
+            <input type="hidden" name="form-name" value="newsletter-footer" />
             <Button type="submit" color="cyan" className="ml-4 flex-none">
               <span className="hidden lg:inline">Join our newsletter</span>
               <span className="lg:hidden">Join newsletter</span>
