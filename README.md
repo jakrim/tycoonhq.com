@@ -1,6 +1,6 @@
-# Tycoon
+# Morals
 
-Tycoon HQ is a curated social platform, this repository is the code for the website tycoonhq.com
+Morals is a curated social platform, this repository is the code for the website tycoonhq.com
 
 ## Getting started
 

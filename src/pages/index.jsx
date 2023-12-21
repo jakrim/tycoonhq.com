@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Morals - A curated content platform.</title>
+        <title>Morals - Find Your Purpose.</title>
         <meta
           name="description"
           content="A curated platform delivering the world’s best ideas. Connect with mentors. Find inspiration, tackle stress,
