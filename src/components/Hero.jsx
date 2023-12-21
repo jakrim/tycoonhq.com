@@ -188,13 +188,16 @@ export function Hero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-              A curated social platform delivering the world’s best people and
-              ideas.
+              Guidance For Your Life's Journey
+              {/* A curated platform delivering the world’s best people and
+              ideas. */}
             </h1>
             <p className="mt-6 text-lg text-gray-600">
-              The most successful, influential, and knowledgeable people in one
+            Connect with mentors. Find inspiration, tackle stress, <br/>and learn
+            how to live a happier more fulfilled life.
+              {/* The most successful, influential, and knowledgeable people in one
               place sharing the stories, habits, and ideas that made them
-              successful.
+              successful. */}
             </p>
             <div className="flex-center flex">
               <div className="mt-8 max-w-sm">

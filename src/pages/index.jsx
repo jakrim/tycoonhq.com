@@ -14,10 +14,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Tycoon - A curated social platform.</title>
+        <title>Morals - A curated content platform.</title>
         <meta
           name="description"
-          content="A curated social platform delivering the world’s best ideas."
+          content="A curated platform delivering the world’s best ideas. Connect with mentors. Find inspiration, tackle stress,
+          and learn how to live a happier more fulfilled life."
         />
         <link rel="apple-touch-icon" sizes="180x180" href="/tycoonFavicons/apple-touch-icon.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="/tycoonFavicons/favicon-16x16.png"/>
@@ -35,7 +36,7 @@ export default function Home() {
         <SecondaryFeatures />
         <CallToAction />
         <Reviews />
-        <Pricing />
+        {/* <Pricing /> */}
         <Faqs />
       </main>
       <Footer />

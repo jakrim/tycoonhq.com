@@ -4,41 +4,41 @@ import { Container } from '@/components/Container'
 
 const features = [
   {
-    name: 'A new way to discover mentors',
+    name: 'An easier way to discover mentors',
     description:
-      'You don’t know who you don’t know. Tycoon helps you find experts relevent to you.',
+      'Morals provides experts who can answer your questions.',
     icon: DeviceListIcon,
   },
   {
-    name: 'Find content faster',
+    name: 'The Right Content at Your Speed',
     description:
-      'Filter by topics and speaker types to find the content you’re looking for.',
+      'Filter by topics and industries to find content that propels you towards your aspirations.',
     icon: DeviceClockIcon,
   },
   {
-    name: 'All social platforms in one place',
+    name: 'One Focus, Many Voices',
     description:
-      'Discover and browse Tyoon content across other social media.',
+      'Access a diverse range of curated insights without the noise of traditional social media.',
     icon: DeviceCardsIcon,
   },
-  {
-    name: 'Broadcast a message',
-    description:
-    'COMING SOON: Record and share your voice directly to your audience.',
-    icon: DeviceArrowIcon,
-  },
-  {
-    name: 'Categorize your posts',
-    description:
-    'COMING SOON: Building more effective discoverability.',
-    icon: DeviceClockIcon,
-  },
-  {
-    name: 'An emphasis on curation',
-    description:
-      'COMING SOON: Stand out among only the world’s top experts, aka Tycoons',
-    icon: DeviceCardsIcon,
-  },
+  // {
+  //   name: 'Broadcast a message',
+  //   description:
+  //   'COMING SOON: Record and share your voice directly to your audience.',
+  //   icon: DeviceArrowIcon,
+  // },
+  // {
+  //   name: 'Categorize your posts',
+  //   description:
+  //   'COMING SOON: Building more effective discoverability.',
+  //   icon: DeviceClockIcon,
+  // },
+  // {
+  //   name: 'An emphasis on curation',
+  //   description:
+  //     'COMING SOON: Stand out among only the world’s top experts, aka Tycoons',
+  //   icon: DeviceCardsIcon,
+  // },
 ]
 
 function DeviceArrowIcon(props) {
@@ -196,11 +196,12 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            Bridging the gap between you and the
-            world’s most successful people.
+            Unlock Collective Wisdom
+            {/* Discover the insights of the world’s deepest thinkers and brightest minds. */}
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            It’s like masterclass meets Twitter.<br/> Tycoons sharing stories about their life, every day.
+            Morals connects you with daily insights from renowned minds, fostering a community of learning and shared purpose.
+            {/* It’s like masterclass meets Twitter.<br/> The world’s best sharing stories about their life, every day. */}
           </p>
         </div>
         <ul

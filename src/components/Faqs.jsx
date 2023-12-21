@@ -7,26 +7,28 @@ const faqs = [
     {
       question: 'Why is this different than other platforms?',
       answer:
-        'By only allowing experts in various industries to post, we’re eliminating the waste of time experienced on current platforms.',
+        'We curate a space dedicated to genuine growth, where industry leaders share their knowledge without the clutter of ads or irrelevant content.',
     },
     {
       question: 'What will this platform accomplish if successful?',
       answer:
-        'Our mission is to bridge the gap between you and the world’s most successful individuals, and create one monumental space that will live on forever after these greats have passed on.',
+        'Our mission is to help young people overcome their fears and anxieties and live a happier, healthier life. We want to help spread great ideas and change society for the better.',
     },
     {
       question: 'What will these experts gain from posting here?',
       answer:
-      'Expanding their audience, influence, and message, by introducing them to people who may have never heard of them before.',
+      'Experts expand their legacy by reaching an engaged audience eager for authentic guidance and mentorship.',
+      // 'Expanding their audience, influence, and message, by introducing them to people who may have never heard of them before.',
       // 'Our goal is to be the most effective way for the world’s most successful individuals to share a message to the people who would love to listen to them speak.',
       // 'By building a product so pleasurable to use, we will draw large audiences that have never heard of some ',
     },
   ],
   [
     {
-      question: 'What is the criteria to become a "Tycoon"?',
+      question: 'What is the criteria to become an Expert?',
       answer:
-        'A Tycoon is anyone who dominates their field in terms of knowledge, influence, wealth, or success. We believe there is a magic in bringing this caliber of people together in one place.',
+      'Our experts excel in their domain, offering unparalleled expertise and vision, handpicked to inspire and lead within our community.',
+        // 'A Tycoon is anyone who dominates their field in terms of knowledge, influence, wealth, or success. We believe there is a magic in bringing this caliber of people together in one place.',
     },
     {
       question: 'Are you hiring?',
@@ -34,26 +36,26 @@ const faqs = [
         'We are hiring exceptional people passionate about helping others find their purpose in life. Send us an email!',
     },
     {
-      question: 'How will Tycoon make money?',
+      question: 'How will Morals make money?',
       answer:
-        'We are pursuing a freemium model where users will gain access to special features based on a subscription to the platform.',
+        'Through a subscription model, we provide an ad-free experience with premium access to exclusive mentorship and content.',
     },
   ],
   [
     {
-      question: 'What kind of content will Tycoon’s post?',
+      question: 'What kind of content will Moral’s post?',
       answer:
-        'It’s entirely up to them and their audience, our goal is only to platform them and increase their reach. We believe learning from the best will help others achieve individual success!',
+        'Content that inspires action and growth, ranging from personal success stories to practical life lessons.',
     },
-    {
-      question: 'What is the strategy for bringing Tycoons on to post?',
-      answer:
-        'v1 of the product is to build an encyclopedia of Tycoons who you may not know and allow you to find them across the web. v2 is to allow them to post original content on the platform.',
-    },
+    // {
+    //   question: 'What is the strategy for bringing Tycoons on to post?',
+    //   answer:
+    //     'v1 of the product is to build an encyclopedia of Tycoons who you may not know and allow you to find them across the web. v2 is to allow them to post original content on the platform.',
+    // },
     {
       question: 'How do I join the beta?',
       answer:
-        'We’ll be releasing v1 in the next few months. Join the waitlist by entering your email!',
+        'Stay tuned for our upcoming release. Join the waitlist today to be part of the transformative journey from the start!',
     },
   ],
 ]

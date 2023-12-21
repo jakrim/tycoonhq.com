@@ -25,23 +25,23 @@ const MotionAppScreenBody = motion(AppScreen.Body)
 
 const features = [
   {
-    name: 'A new way to discover',
+    name: 'Curated Paths to Success',
     description:
-      'All of the most successful people at your fingertips, across industries. Don’t see who you’re looking for? Invite them.',
+      'Discover curated content paths from industry experts, specifically designed to navigate you towards achieving your goals.',
     icon: ExploreIcon,
     screen: ExploreScreen,
   },
   {
-    name: 'A social platform not ruined by marketers',
+    name: 'Mentorship That Matters',
     description:
-      'No businesses, no brands, no ads. A platform for people, by people.',
+      'Forge meaningful connections with mentors who can offer custom advice, motivation, and real-world insights.',
     icon: DeviceTouchIcon,
     screen: HomeScreen,
   },
   {
-    name: 'Find content faster',
+    name: 'Tailored Content Discovery',
     description:
-      "More efficient content categorization allows you to find content you'll enjoy.",
+      "Fresh daily tailored content that quickly guides you to be your best, every day.",
     icon: FilterIcon,
     screen: ExploreModal,
   },
@@ -176,9 +176,9 @@ function ExploreScreen({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-        <AppScreen.Title>Explore Tycoons</AppScreen.Title>
+        <AppScreen.Title>Expert Guidance</AppScreen.Title>
         <AppScreen.Subtitle>
-        Browse<span className="text-white"> the top 1%,</span> those you know and don’t know.
+        A curated list of <span className="text-white">the most sought after experts </span> delivering advice.
         </AppScreen.Subtitle>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
@@ -194,8 +194,8 @@ function ExploreModal({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-        <AppScreen.Title>Content Filtering</AppScreen.Title>
-        <AppScreen.Subtitle>Making search less black and white</AppScreen.Subtitle>
+        <AppScreen.Title>Answers for Questions</AppScreen.Title>
+        <AppScreen.Subtitle><span className="text-white">Solve</span> your problems</AppScreen.Subtitle>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
           <>
@@ -216,9 +216,9 @@ function HomeScreen({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-        <AppScreen.Title>Content and Users</AppScreen.Title>
+        <AppScreen.Title>Learn How To Live</AppScreen.Title>
         <AppScreen.Subtitle>
-          How social media used to be
+          Life feels harder today for young people like you. <span className="text-white">We're here to help.</span>
         </AppScreen.Subtitle>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
@@ -439,11 +439,11 @@ export function PrimaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-            A social platform that isn’t a waste of time.
+            A social platform for real personal growth.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-            Tycoon takes the guessing out of who the experts are. We built the most effective way
-            to find the world’s most successful people, and the most efficient way for them to reach you.
+          Direct Access to Experts: Morals connects you efficiently with the
+          world’s leading minds for personal and professional development.
           </p>
         </div>
       </Container>

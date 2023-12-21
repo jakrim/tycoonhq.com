@@ -200,7 +200,7 @@ export function Pricing() {
             id="pricing-title"
             className="text-3xl font-medium tracking-tight text-gray-900"
           >
-            A Service by the People for the People
+             Ad-Free Wisdom
           </h2>
           <p className="mt-2 text-lg text-gray-600">
             We don’t allow businesses or brands to spam your feed with ads, <br/> so we’ve created a new model for social.

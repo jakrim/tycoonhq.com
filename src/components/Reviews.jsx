@@ -14,7 +14,7 @@ import { Container } from '@/components/Container'
 const reviews = [
   {
     title: 'The problem isn’t content, it’s curation.',
-    body: 'Tycoon helps me find and connect with experts faster.',
+    body: 'Morals helps me find and connect with experts faster.',
     author: 'TechCrazy',
     rating: 5,
   },
@@ -50,7 +50,7 @@ const reviews = [
   },
   {
     title: 'So. Much. Fun!',
-    body: 'Tycoon makes finding and listening to smart people fun.',
+    body: 'Morals makes finding and listening to smart people fun.',
     author: 'Superman',
     rating: 5,
   },
@@ -238,10 +238,11 @@ export function Reviews() {
           id="reviews-title"
           className="text-3xl font-medium tracking-tight text-gray-900 sm:text-center"
         >
-          Finally find your World-Class Mentor.
+          Discover your World-Class Mentor.
         </h2>
         <p className="mt-2 text-lg text-gray-600 sm:text-center">
-        We’re building a safe space for influential people to speak more candidly about their success,<br/>allowing others to achieve success in their lives.
+        Morals is crafting a trusted environment for leaders to share their
+        insights transparently,<br/>empowering you to carve out your own successful path.
         </p>
         <ReviewGrid />
       </Container>
