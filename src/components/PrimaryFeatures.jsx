@@ -218,7 +218,7 @@ function HomeScreen({ custom, animated = false }) {
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
         <AppScreen.Title>Learn How To Live</AppScreen.Title>
         <AppScreen.Subtitle>
-          Life feels harder today for young people like you. <span className="text-white">We're here to help.</span>
+          Life feels harder today for young people like you. <span className="text-white">We’re here to help.</span>
         </AppScreen.Subtitle>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
